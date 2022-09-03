@@ -1,0 +1,72 @@
+*, *::before, *::after {
+    /* for easier sizing we use border box */
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.heading {
+    text-align: center;
+    color: #ffd606;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+    body {
+    /*set to zero so that fill entire background*/
+    padding: 0;
+    margin:  0;
+    background: linear-gradient(to left, #0052ff, #00ff98 )
+}
+
+.calculator-grid {
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: minmax(90px,auto) repeat(5,100px);
+}
+
+.calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid #020061;
+    outline: none;
+    background-color: rgba(255,255,255,.75);
+}
+
+.calculator-grid > button:hover {
+background-color: rgba(255,255,255,.9);
+}
+
+.span-2 {
+    grid-column: span 2;
+}
+
+.output {
+    grid-column: 1/-1;
+    background-color: rgba( 0 , 0,0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .previous-display {
+    color: rgba(255, 255, 255, .76);
+    font-size: 1.5rem;
+}
+.output .current-display {
+ color: white;
+ font-size: 2.5rem;   
+}
+
+.footer {
+    font-size: 1rem;
+    text-align: center;
+    
+}
