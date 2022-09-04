@@ -1,0 +1,70 @@
+*, *::before, *::after {
+    /* for easier sizing we use border box */
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.heading{
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 80px;
+}   
+
+body {
+   margin-top: 2px;
+   
+    background:linear-gradient(to right, #f7b305, #f75305)
+   
+
+}
+#container {
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+    color: white;
+}
+
+ .digit {
+    font-size: 150px;
+    font-weight: bold;
+ }
+
+ .txt {
+    font-size: 40px;
+    font-weight: bold;
+ }
+
+ #btn-container {
+    text-align: center;
+    margin-top: 2px;
+   
+}
+.btn {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 4rem;
+    border: 1px solid #ffe404;
+    border-radius: 12px;
+    outline: none;
+    background-color: rgba(255,255,255,.5);
+    color: #FF5E04
+    
+
+}
+.btn:hover {
+    background-color: rgba(255,255,255,.9);
+}
+
+.footer {
+    text-align: center;
+    font-weight:900 ;
+    color: black;
+    font-size: 2rem;
+
+}
+
+
