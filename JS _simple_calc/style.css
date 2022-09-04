@@ -15,7 +15,7 @@
     /*set to zero so that fill entire background*/
     padding: 0;
     margin:  0;
-    background: linear-gradient(to left, #0052ff, #00ff98 )
+    background: linear-gradient(to right, #0052ff, #00ff98 )
 }
 
 .calculator-grid {
@@ -56,11 +56,11 @@ background-color: rgba(255,255,255,.9);
     word-break: break-all;
 }
 
-.output .previous-display {
+.output .previous-operand {
     color: rgba(255, 255, 255, .76);
     font-size: 1.5rem;
 }
-.output .current-display {
+.output .current-operand {
  color: white;
  font-size: 2.5rem;   
 }
@@ -68,5 +68,5 @@ background-color: rgba(255,255,255,.9);
 .footer {
     font-size: 1rem;
     text-align: center;
-    
+
 }
